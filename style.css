@@ -1,0 +1,384 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    color: #111;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.menu{
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2.5rem;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Hero style */
+#hero{
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+}
+
+.kiri{
+    width: 60%;
+}
+
+.kanan{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+.kanan img{
+    border-radius: 0 2rem 0 2rem;
+    height: auto;
+    max-height: 425px;
+    max-width: 100%;
+    width: 320px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);;
+}
+
+
+.button{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.button a{
+    text-decoration: none;
+    color: blue;
+    margin-right: 2rem;
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button a i{
+    margin-right: 0.35rem;
+}
+
+.button a:hover{
+    background-color: blue;
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* skills section */
+#skills{
+    background-color: lightgrey;
+    padding: 5rem;
+}
+
+#skills h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500px;
+}
+
+#skills p{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.item img{
+    width: 20px;
+}
+
+.item{
+    border: 2px solid black;
+    width: 17%;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+.card{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.card div{
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.card div:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimoni */
+#testimoni{
+    padding: 5rem;
+}
+
+#testimoni h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.testimoni-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.profile-image img{
+    width: 120px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25%;
+}
+
+.testimoni-card{
+    background-color: lightgray;
+    width: 300px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.testimoni-card:hover{
+    transform:translateY(-7px) ;
+}
+
+.profile-info{
+    text-align: center;
+}
+
+.job{
+    color: grey;
+}
+
+.message{
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.testimoni-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    width: 100%;
+    margin-bottom: 0rem;
+}
+
+#contact h2{
+    margin-bottom: 0rem;
+}
+
+#contact p{
+    text-align: center;
+}
+
+.card-1{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    border: 2px solid black;
+    width: 17%;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    min-width: 150px;
+}
+
+.card-1 div{
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 5px;
+}
+
+.card-1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.card-1 div:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px){
+    .menu{
+        padding: 1rem 1.25rem;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .logo h1{
+        font-size: 1.25rem;
+        margin: 0.35rem 0;
+    }
+
+    nav{
+        gap: 0rem;
+    }
+
+    nav a{
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    #hero{
+        padding: 3rem 1.25rem;
+        gap: 2rem;
+    }
+
+    .kiri,
+    .kanan{
+        width: 50%;
+    }
+
+    .button{
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .button a{
+        margin-right: 0;
+    }
+
+    #skills,
+    #testimoni{
+        padding: 3rem 1.25rem;
+    }
+
+    #skills p{
+        margin-bottom: 3rem;
+    }
+
+    .item{
+        width: min(100%, 220px);
+    }
+
+    .testimoni-container{
+        gap: 1.5rem;
+    }
+
+    .testimoni-card{
+        width: min(100%, 360px);
+    }
+}
+
+@media (max-width: 480px){
+    .menu{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    #hero{
+        flex-direction: column-reverse;
+        align-items: stretch;
+        padding-top: 2rem;
+    }
+
+    .kiri,
+    .kanan{
+        width: 100%;
+    }
+
+    .kanan{
+        justify-content: center;
+    }
+
+    .kanan img{
+        width: min(100%, 320px);
+    }
+
+    .kiri h1{
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .button{
+        margin-top: 2rem;
+    }
+
+    .button a{
+        flex: 1 1 42%;
+        text-align: center;
+    }
+
+    #skills h2,
+    #testimoni h2{
+        font-size: 2rem;
+    }
+}
