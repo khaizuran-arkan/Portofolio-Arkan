@@ -20,12 +20,27 @@ body{
 }
 
 /* Navbar */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo h1{
+    font-size: 30px;
+    margin: 10px;
+}
+
 .menu{
     background-color: lightgrey;
     display: flex;
+    width: 85%;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 2.5rem;
+    padding: 0.2rem 1rem;
+    border: 2px solid black;
+    border-radius: 50px;
 }
 
 nav{
@@ -37,10 +52,10 @@ nav{
 nav a{
     text-decoration: none;
     color: black;
-    margin: 1rem;
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 0.2rem;
     transition: all 0.3s ease;
+    margin: 1px;
 }
 
 nav a:hover{
